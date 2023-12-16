@@ -326,3 +326,204 @@ footer h1{
     flex-direction:row;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 1240px) {
+    header,.hero,.project-grid, .contact-container{
+        margin:0px 50px
+    }
+
+    footer{
+        padding:0px
+    }
+    .footer-content{
+        margin:0px 50px
+    }
+  }
+
+@media only screen and (max-width: 884px){
+  
+    
+    
+     /* Header */
+    header {
+        flex-direction: column;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    nav ul{
+        padding:0px;
+        justify-content: space-around;
+        padding-top:10px
+    }
+    
+    /* HERO */
+
+    .hero-header{
+        font-size: 24px;
+    }
+
+    .hero-header h2{
+        margin:0px
+    }
+
+    #headshot{
+        width:80%;
+        height:auto
+    }
+        
+    /* Project */
+
+    .project-grid{
+        display:grid;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "project-1" 
+        "project-2"
+        "project-3"
+        "project-4"
+        "project-5"
+    }
+    /* CONTACT */
+
+    .contact-container{
+        display:block;
+    }
+
+    .image-container{
+        display:none;
+    }
+    /* footer */
+
+    footer{
+        padding:0px
+    }
+    .footer-content{
+        margin:0px 10px
+    }
+
+    footer h1{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 746px) {
+    #headshot{
+        width:50%;
+        height:auto
+    }
+
+    .hero{
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "header header"
+        "sub-text image"
+    }
+
+    .hero-header{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .hero-button{
+        background-color: #0D1282;
+        padding: 5px 20px;
+        border:none;
+        border-radius: 5px;
+        margin-top:20px;
+        margin-bottom: 5%;
+    }
+
+    .hero-sub-text {
+        grid-area: sub-text;
+        align-self: center;
+        justify-self: center
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Header */
+    header,.hero,.project-grid, .contact-container{
+        margin:0px
+    }
+    header {
+        flex-direction: column;
+    }
+
+    header h1{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    /* HERO */
+    
+    .hero{
+        flex-direction: column;
+        padding-top:100px    
+    }
+
+    #hero-text{
+        text-align:center;
+        }
+
+    .hero-header{
+        font-size: 30px;
+    }
+    .hero-sub-text{
+        padding-top: 20px;
+        margin:0 10px
+    }
+    
+    .hero{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "header"
+        "image"
+        "sub-text";
+    }
+
+    .hero-button{
+        background-color: #0D1282;
+        padding:10px 30px;
+        border:none;
+        border-radius: 5px;
+        margin-top:20px;
+        margin-bottom: 5%;
+    }
+
+    #headshot{
+        width:90%;
+        height:auto
+    }
+
+    .hero-sub-text p{
+        font-size:20px
+    }
+        
+    /* CONTACT */
+
+    .contact-container{
+        display:block;
+    }
+
+    .image-container{
+        display:none;
+    }
+    /* footer */
+
+    footer{
+        padding:0px
+    }
+
+    footer h1{
+        font-size: 24px;
+    }
+}
